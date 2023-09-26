@@ -15,9 +15,9 @@ resource "aws_iam_group_membership" "team" {
 
 
   users = [
-    aws_iam_user.lb1.name,             #== gabi
-    aws_iam_user.lb2.name,             #== gabi3
+    aws_iam_user.lb1.name, #== gabi
+    aws_iam_user.lb2.name, #== gabi3
   ]
 
-  group = aws_iam_group.developers.name          #== developers
+  group = aws_iam_group.developers.name #== developers
 }
